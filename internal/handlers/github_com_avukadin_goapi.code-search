@@ -1,0 +1,30 @@
+# Query: github.com/avukadin/goapi
+# ContextLines: 1
+
+7 results - 5 files
+
+go.mod:
+  5  require (
+  6: 	github.com/go-rest-server v0.0.0-20230822123528-a98a49676213
+  7  	github.com/go-chi/chi v1.5.5
+
+go.sum:
+  1: github.com/go-rest-server v0.0.0-20230822123528-a98a49676213 h1:ERH020J95qPKD5Z8RIz06397oYG66wM7cIZIjy/R/oo=
+  2: github.com/go-rest-server v0.0.0-20230822123528-a98a49676213/go.mod h1:kLCmesF1ihLbl4yWkRV9RsdavJ+jAQwCXJ4nk4EKmeQ=
+  3  github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+
+cmd/api/main.go:
+  4  	"fmt"
+  5: 	"github.com/go-rest-server/internal/handlers"
+  6  	"github.com/go-chi/chi"
+
+internal/handlers/api.go:
+  3  import (
+  4: 	"github.com/go-rest-server/internal/middleware"
+  5  	"github.com/go-chi/chi"
+
+internal/middleware/authorization.go:
+  6  
+  7: 	"github.com/go-rest-server/api"
+  8: 	"github.com/go-rest-server/internal/tools"
+  9  	log "github.com/sirupsen/logrus"
